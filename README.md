@@ -1,4 +1,4 @@
 # CaseStudyWEBAPIProject
 
-Bir case çözümüdür. Northwind veri tabanı kullanılmıştır. Çözümde maalesef şuan api kısmında ilişkisel kısımların detayini gösteremedim. 
+Bir case çözümüdür. Northwind veri tabanı kullanılmıştır. Çözümde maalesef şuan swagger veya postman üzerinde ilişkisel kısımların detayini gösteremedim. 
 Bunun çözümünü bulunca repoyu güncelleyeceğim.
