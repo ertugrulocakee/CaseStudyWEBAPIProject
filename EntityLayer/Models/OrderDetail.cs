@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 #nullable disable
 
@@ -14,6 +15,7 @@ namespace EntityLayer.Models
         public float Discount { get; set; }
 
         public virtual Order Order { get; set; }
+
         public virtual Product Product { get; set; }
     }
 }

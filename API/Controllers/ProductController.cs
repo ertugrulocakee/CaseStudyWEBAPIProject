@@ -15,13 +15,14 @@ namespace API.Controllers
     public class ProductController : ControllerBase
     {
 
+     
         ProductManager productManager = new ProductManager(new EFProductDAL());
 
         [HttpGet]
         public  IActionResult GetProducts()
         {
 
-            return Ok(productManager.TGetList());
+            return Ok(productManager.TProductListExtras());
 
         }
 

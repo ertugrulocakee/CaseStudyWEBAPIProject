@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 #nullable disable
 
@@ -25,7 +26,8 @@ namespace EntityLayer.Models
         public string Phone { get; set; }
         public string Fax { get; set; }
         public string HomePage { get; set; }
-      
+
+        [JsonIgnore]
         public virtual ICollection<Product> Products { get; set; }
     }
 }

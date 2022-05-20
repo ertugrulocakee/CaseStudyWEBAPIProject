@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 #nullable disable
 
@@ -24,12 +25,14 @@ namespace EntityLayer.Models
         public bool Discontinued { get; set; }
 
         public int? CategoryId { get; set; }
-   
+
         public virtual Category Category { get; set; }
 
         public int? SupplierId { get; set; }
-     
+
         public virtual Supplier Supplier { get; set; }
+
+        [JsonIgnore]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }
